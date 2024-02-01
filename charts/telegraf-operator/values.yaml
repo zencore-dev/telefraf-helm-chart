@@ -16,6 +16,9 @@ classes:
         hostname = "$HOSTNAME"
         nodename = "$NODENAME"
         type = "infra"
+    default: |
+       [[outputs.file]]
+         files = ["stdout"]
 
 certManager:
   enable: false
